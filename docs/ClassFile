@@ -1,0 +1,152 @@
+package stepDefinitions;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.LoginPage;
+
+public class StepsLogin {
+
+	
+	public WebDriver ldriver;
+	public LoginPage lpage;
+	
+	@Given("User Launch Chrome browser")
+	public void user_Launch_Chrome_browser() {
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+		ldriver = new ChromeDriver();
+		lpage = new LoginPage(ldriver);
+		
+		
+	}
+
+	@When("User opens URL {string}")
+	public void user_opens_URL(String url) {
+		ldriver.get(url);
+	}
+
+	/*
+	@When("User enters Username as {string} and Passord as {string}")
+	public void user_enters_Username_as_and_Passord_as(String user, String pass) {
+		//lpage.setUsername(user);
+		//lpage.setPassword(pass);
+	}
+
+	@When("Click on Login")
+	public void click_on_Login() {
+		//lpage.clickBtnSignIn();
+	}
+	*/
+	
+	@Then("Page Title should be {string}")
+	public void page_Title_should_be(String title) throws InterruptedException {
+	    Assert.assertEquals(title, ldriver.getTitle());
+	    Thread.sleep(5000);
+    
+	    ldriver.close();
+	}
+	
+	
+	@Then("close browser")
+	public void close_browser() {
+		ldriver.quit();
+		
+	}
+	
+
+}
+-----------------------------------------------------
+
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+
+	public WebDriver ldriver;
+	
+	public LoginPage(WebDriver rdriver)
+	{
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+		
+	}
+	
+	@FindBy(id="txt1")
+	@CacheLookup
+	WebElement txtUsername;
+	
+	@FindBy(id="txt21")
+	@CacheLookup
+	WebElement txtPassword;
+	
+	@FindBy(xpath ="//button[@class='login100-form-btn']")
+	@CacheLookup
+	WebElement btnSignIn;
+	
+	
+	@FindBy(linkText="SignOut")
+	@CacheLookup
+	WebElement btnSignOut;
+	
+	
+	public void setUsername(String user){
+		txtUsername.clear();
+		txtUsername.sendKeys(user);
+	}
+	
+	public void setPassword(String pass){
+		txtPassword.clear();
+		txtPassword.sendKeys(pass);
+	}
+	
+	public void clickBtnSignIn(){
+		btnSignIn.click();
+	}
+	
+	
+	public void clickBtnSignOut(){
+		btnSignOut.click();
+	}
+	
+}
+
+-----------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test</title>
+<link rel="stylesheet" type="text/css" href="css/body.css">
+</head>
+<body>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="images/icons/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" id="txt">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+ 
+  </div>
+</form>
+
+</body>
+</html>

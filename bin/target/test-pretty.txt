@@ -1,0 +1,72 @@
+Feature: Login Automating
+
+  Scenario: Successfull Login with Valid Credentials                                  # Features/Login.feature:3
+    Given User Launch Chrome browser                                                  # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"                    # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                             # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "mamoudou@gmail.com" and Password as "123456Admin&%" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                                # StepsLogin.click_on_Login()
+    Then close browser                                                                # StepsLogin.close_browser()
+
+  Scenario Outline: Login Data Driven # Features/Login.feature:11
+    Given User Launch Chrome browser
+    When User opens URL "http://localhost:8080/Testautomation-01/"
+    Then Page Title should be "Test automation Framework"
+    When User enters Username as "<email>" and Password as "<password>"
+    And Click on Login
+    Then close browser
+
+    Examples: 
+
+  Scenario Outline: Login Data Driven                                        # Features/Login.feature:21
+    Given User Launch Chrome browser                                         # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"           # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                    # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "camara@gmail.com" and Password as "admin1" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                       # StepsLogin.click_on_Login()
+    Then close browser                                                       # StepsLogin.close_browser()
+
+  Scenario Outline: Login Data Driven                                          # Features/Login.feature:22
+    Given User Launch Chrome browser                                           # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"             # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                      # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "amos12@hotmail.com" and Password as "A_#in2" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                         # StepsLogin.click_on_Login()
+    Then close browser                                                         # StepsLogin.close_browser()
+
+  Scenario Outline: Login Data Driven                                            # Features/Login.feature:23
+    Given User Launch Chrome browser                                             # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"               # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                        # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "12345pala@yahoo.com" and Password as "Ad/min3" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                           # StepsLogin.click_on_Login()
+    Then close browser                                                           # StepsLogin.close_browser()
+
+  Scenario Outline: Login Data Driven                                                 # Features/Login.feature:24
+    Given User Launch Chrome browser                                                  # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"                    # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                             # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "_robert.ger34@gmail.com" and Password as "%234in&4" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                                # StepsLogin.click_on_Login()
+    Then close browser                                                                # StepsLogin.close_browser()
+
+  Scenario Outline: Login Data Driven                                               # Features/Login.feature:25
+    Given User Launch Chrome browser                                                # StepsLogin.user_Launch_Chrome_browser()
+    When User opens URL "http://localhost:8080/Testautomation-01/"                  # StepsLogin.user_opens_URL(String)
+    Then Page Title should be "Test automation Framework"                           # StepsLogin.page_Title_should_be(String)
+    When User enters Username as "baga_dressin345@gmail.com" and Password as "56&%" # StepsLogin.user_enters_Username_as_and_Password_as(String,String)
+    And Click on Login                                                              # StepsLogin.click_on_Login()
+    Then close browser                                                              # StepsLogin.close_browser()
+
+Feature: Recovered Sing In
+
+  Background: Successfull Login with Valid Credentials # Features/SignIn.feature:3
+    Given Reopen Chrome browser                        # StepsLogin.reopen_Chrome_browser()
+
+  Scenario: Login with Valid Credentials                                  # Features/SignIn.feature:7
+    Given Launch Chrome browser                                           # StepsLogin.launch_Chrome_browser()
+    When Opens URL "http://localhost:8080/Testautomation-01/"             # StepsLogin.opens_URL(String)
+    Then Title of page should be "Test automation Framework"              # StepsLogin.title_of_page_should_be(String)
+    When Enters Username as "mamoudou@gmail.com" and Password as "123456" # StepsLogin.enters_Username_as_and_Password_as(String,String)
+    And Click on Sign In                                                  # StepsLogin.click_on_Sign_In()
+    Then Quit browser                                                     # StepsLogin.quit_browser()

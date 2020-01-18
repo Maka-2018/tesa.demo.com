@@ -1,0 +1,780 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-01T17:01:03.907Z",
+        "line": 3,
+        "name": "Successfull Login with Valid Credentials",
+        "description": "",
+        "id": "login-automating;successfull-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7002828300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125035900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26781900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 298669800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Username as \"mamoudou@gmail.com\" and Password as \"123456Admin\u0026%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mamoudou@gmail.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"123456Admin\u0026%\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59969700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2734281700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:14.186Z",
+        "line": 21,
+        "name": "Login Data Driven",
+        "description": "",
+        "id": "login-automating;login-data-driven;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5170451300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101594100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22708500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 218772600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Username as \"camara@gmail.com\" and Password as \"admin1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"camara@gmail.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin1\"",
+                  "offset": 59
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64354100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2676291300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:22.449Z",
+        "line": 22,
+        "name": "Login Data Driven",
+        "description": "",
+        "id": "login-automating;login-data-driven;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5188370300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105585000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19082100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232043300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Username as \"amos12@hotmail.com\" and Password as \"A_#in2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amos12@hotmail.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"A_#in2\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57757600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2675554500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:30.731Z",
+        "line": 23,
+        "name": "Login Data Driven",
+        "description": "",
+        "id": "login-automating;login-data-driven;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5164807100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113114400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20673000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 243179500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Username as \"12345pala@yahoo.com\" and Password as \"Ad/min3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345pala@yahoo.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"Ad/min3\"",
+                  "offset": 62
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55637200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2729271700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:39.061Z",
+        "line": 24,
+        "name": "Login Data Driven",
+        "description": "",
+        "id": "login-automating;login-data-driven;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5232722600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120157600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19398800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 282935500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Username as \"_robert.ger34@gmail.com\" and Password as \"%234in\u00264\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"_robert.ger34@gmail.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"%234in\u00264\"",
+                  "offset": 66
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64652700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3161056400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:47.946Z",
+        "line": 25,
+        "name": "Login Data Driven",
+        "description": "",
+        "id": "login-automating;login-data-driven;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5201369900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93058700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "StepsLogin.user_opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17080300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Page Title should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsLogin.page_Title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 245535900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Username as \"baga_dressin345@gmail.com\" and Password as \"56\u0026%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"baga_dressin345@gmail.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"56\u0026%\"",
+                  "offset": 68
+                }
+              ],
+              "location": "StepsLogin.user_enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61395900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Login",
+            "match": {
+              "location": "StepsLogin.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2661029900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close browser",
+            "match": {
+              "location": "StepsLogin.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Automating",
+    "description": "",
+    "id": "login-automating",
+    "keyword": "Feature",
+    "uri": "file:Features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successfull Login with Valid Credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 487400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Reopen Chrome browser",
+            "match": {
+              "location": "StepsLogin.reopen_Chrome_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-01T17:01:56.229Z",
+        "line": 7,
+        "name": "Login with Valid Credentials",
+        "description": "",
+        "id": "recovered-sing-in;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5213237600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Launch Chrome browser",
+            "match": {
+              "location": "StepsLogin.launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4238705200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Opens URL \"http://localhost:8080/Testautomation-01/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/Testautomation-01/\"",
+                  "offset": 10
+                }
+              ],
+              "location": "StepsLogin.opens_URL(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19625000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Title of page should be \"Test automation Framework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test automation Framework\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepsLogin.title_of_page_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285606000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enters Username as \"mamoudou@gmail.com\" and Password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mamoudou@gmail.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 56
+                }
+              ],
+              "location": "StepsLogin.enters_Username_as_and_Password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59218200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Sign In",
+            "match": {
+              "location": "StepsLogin.click_on_Sign_In()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 726031400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Quit browser",
+            "match": {
+              "location": "StepsLogin.quit_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Recovered Sing In",
+    "description": "",
+    "id": "recovered-sing-in",
+    "keyword": "Feature",
+    "uri": "file:Features/SignIn.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,401 @@
+[
+  {
+    "source": "User Launch Chrome browser",
+    "steps": [
+      {
+        "name": "User Launch Chrome browser",
+        "aggregatedDurations": {
+          "median": 5.194870100,
+          "average": 5.493424917
+        },
+        "durations": [
+          {
+            "duration": 7.0028283,
+            "location": "file:Features/Login.feature:4"
+          },
+          {
+            "duration": 5.1704513,
+            "location": "file:Features/Login.feature:12"
+          },
+          {
+            "duration": 5.1883703,
+            "location": "file:Features/Login.feature:12"
+          },
+          {
+            "duration": 5.1648071,
+            "location": "file:Features/Login.feature:12"
+          },
+          {
+            "duration": 5.2327226,
+            "location": "file:Features/Login.feature:12"
+          },
+          {
+            "duration": 5.2013699,
+            "location": "file:Features/Login.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User opens URL {string}",
+    "steps": [
+      {
+        "name": "User opens URL \"http://localhost:8080/Testautomation-01/\"",
+        "aggregatedDurations": {
+          "median": 0.109349700,
+          "average": 0.109757617
+        },
+        "durations": [
+          {
+            "duration": 0.1250359,
+            "location": "file:Features/Login.feature:5"
+          },
+          {
+            "duration": 0.1015941,
+            "location": "file:Features/Login.feature:13"
+          },
+          {
+            "duration": 0.105585,
+            "location": "file:Features/Login.feature:13"
+          },
+          {
+            "duration": 0.1131144,
+            "location": "file:Features/Login.feature:13"
+          },
+          {
+            "duration": 0.1201576,
+            "location": "file:Features/Login.feature:13"
+          },
+          {
+            "duration": 0.0930587,
+            "location": "file:Features/Login.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Page Title should be {string}",
+    "steps": [
+      {
+        "name": "Page Title should be \"Test automation Framework\"",
+        "aggregatedDurations": {
+          "median": 0.020035900,
+          "average": 0.020954100
+        },
+        "durations": [
+          {
+            "duration": 0.0267819,
+            "location": "file:Features/Login.feature:6"
+          },
+          {
+            "duration": 0.0227085,
+            "location": "file:Features/Login.feature:14"
+          },
+          {
+            "duration": 0.0190821,
+            "location": "file:Features/Login.feature:14"
+          },
+          {
+            "duration": 0.020673,
+            "location": "file:Features/Login.feature:14"
+          },
+          {
+            "duration": 0.0193988,
+            "location": "file:Features/Login.feature:14"
+          },
+          {
+            "duration": 0.0170803,
+            "location": "file:Features/Login.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User enters Username as {string} and Password as {string}",
+    "steps": [
+      {
+        "name": "User enters Username as \"mamoudou@gmail.com\" and Password as \"123456Admin\u0026%\"",
+        "aggregatedDurations": {
+          "median": 0.2986698,
+          "average": 0.298669800
+        },
+        "durations": [
+          {
+            "duration": 0.2986698,
+            "location": "file:Features/Login.feature:7"
+          }
+        ]
+      },
+      {
+        "name": "User enters Username as \"camara@gmail.com\" and Password as \"admin1\"",
+        "aggregatedDurations": {
+          "median": 0.2187726,
+          "average": 0.218772600
+        },
+        "durations": [
+          {
+            "duration": 0.2187726,
+            "location": "file:Features/Login.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "User enters Username as \"amos12@hotmail.com\" and Password as \"A_#in2\"",
+        "aggregatedDurations": {
+          "median": 0.2320433,
+          "average": 0.232043300
+        },
+        "durations": [
+          {
+            "duration": 0.2320433,
+            "location": "file:Features/Login.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "User enters Username as \"12345pala@yahoo.com\" and Password as \"Ad/min3\"",
+        "aggregatedDurations": {
+          "median": 0.2431795,
+          "average": 0.243179500
+        },
+        "durations": [
+          {
+            "duration": 0.2431795,
+            "location": "file:Features/Login.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "User enters Username as \"_robert.ger34@gmail.com\" and Password as \"%234in\u00264\"",
+        "aggregatedDurations": {
+          "median": 0.2829355,
+          "average": 0.282935500
+        },
+        "durations": [
+          {
+            "duration": 0.2829355,
+            "location": "file:Features/Login.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "User enters Username as \"baga_dressin345@gmail.com\" and Password as \"56\u0026%\"",
+        "aggregatedDurations": {
+          "median": 0.2455359,
+          "average": 0.245535900
+        },
+        "durations": [
+          {
+            "duration": 0.2455359,
+            "location": "file:Features/Login.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Login",
+    "steps": [
+      {
+        "name": "Click on Login",
+        "aggregatedDurations": {
+          "median": 0.060682800,
+          "average": 0.060627867
+        },
+        "durations": [
+          {
+            "duration": 0.0599697,
+            "location": "file:Features/Login.feature:8"
+          },
+          {
+            "duration": 0.0643541,
+            "location": "file:Features/Login.feature:16"
+          },
+          {
+            "duration": 0.0577576,
+            "location": "file:Features/Login.feature:16"
+          },
+          {
+            "duration": 0.0556372,
+            "location": "file:Features/Login.feature:16"
+          },
+          {
+            "duration": 0.0646527,
+            "location": "file:Features/Login.feature:16"
+          },
+          {
+            "duration": 0.0613959,
+            "location": "file:Features/Login.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "close browser",
+    "steps": [
+      {
+        "name": "close browser",
+        "aggregatedDurations": {
+          "median": 2.702781500,
+          "average": 2.772914250
+        },
+        "durations": [
+          {
+            "duration": 2.7342817,
+            "location": "file:Features/Login.feature:9"
+          },
+          {
+            "duration": 2.6762913,
+            "location": "file:Features/Login.feature:17"
+          },
+          {
+            "duration": 2.6755545,
+            "location": "file:Features/Login.feature:17"
+          },
+          {
+            "duration": 2.7292717,
+            "location": "file:Features/Login.feature:17"
+          },
+          {
+            "duration": 3.1610564,
+            "location": "file:Features/Login.feature:17"
+          },
+          {
+            "duration": 2.6610299,
+            "location": "file:Features/Login.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Reopen Chrome browser",
+    "steps": [
+      {
+        "name": "Reopen Chrome browser",
+        "aggregatedDurations": {
+          "median": 0.0004874,
+          "average": 0.000487400
+        },
+        "durations": [
+          {
+            "duration": 0.0004874,
+            "location": "file:Features/SignIn.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Launch Chrome browser",
+    "steps": [
+      {
+        "name": "Launch Chrome browser",
+        "aggregatedDurations": {
+          "median": 5.2132376,
+          "average": 5.213237600
+        },
+        "durations": [
+          {
+            "duration": 5.2132376,
+            "location": "file:Features/SignIn.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Opens URL {string}",
+    "steps": [
+      {
+        "name": "Opens URL \"http://localhost:8080/Testautomation-01/\"",
+        "aggregatedDurations": {
+          "median": 4.2387052,
+          "average": 4.238705200
+        },
+        "durations": [
+          {
+            "duration": 4.2387052,
+            "location": "file:Features/SignIn.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Title of page should be {string}",
+    "steps": [
+      {
+        "name": "Title of page should be \"Test automation Framework\"",
+        "aggregatedDurations": {
+          "median": 0.019625,
+          "average": 0.019625000
+        },
+        "durations": [
+          {
+            "duration": 0.019625,
+            "location": "file:Features/SignIn.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Enters Username as {string} and Password as {string}",
+    "steps": [
+      {
+        "name": "Enters Username as \"mamoudou@gmail.com\" and Password as \"123456\"",
+        "aggregatedDurations": {
+          "median": 0.285606,
+          "average": 0.285606000
+        },
+        "durations": [
+          {
+            "duration": 0.285606,
+            "location": "file:Features/SignIn.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Sign In",
+    "steps": [
+      {
+        "name": "Click on Sign In",
+        "aggregatedDurations": {
+          "median": 0.0592182,
+          "average": 0.059218200
+        },
+        "durations": [
+          {
+            "duration": 0.0592182,
+            "location": "file:Features/SignIn.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Quit browser",
+    "steps": [
+      {
+        "name": "Quit browser",
+        "aggregatedDurations": {
+          "median": 0.7260314,
+          "average": 0.726031400
+        },
+        "durations": [
+          {
+            "duration": 0.7260314,
+            "location": "file:Features/SignIn.feature:13"
+          }
+        ]
+      }
+    ]
+  }
+]
